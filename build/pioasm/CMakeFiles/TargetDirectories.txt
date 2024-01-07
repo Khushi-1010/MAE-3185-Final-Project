@@ -1,0 +1,3 @@
+/mnt/c/Users/KHUSHI PIPARAVA/OneDrive - University of Texas at Arlington/FALL 2023/Mechatronics/Final project/build/pioasm/CMakeFiles/pioasm.dir
+/mnt/c/Users/KHUSHI PIPARAVA/OneDrive - University of Texas at Arlington/FALL 2023/Mechatronics/Final project/build/pioasm/CMakeFiles/edit_cache.dir
+/mnt/c/Users/KHUSHI PIPARAVA/OneDrive - University of Texas at Arlington/FALL 2023/Mechatronics/Final project/build/pioasm/CMakeFiles/rebuild_cache.dir
