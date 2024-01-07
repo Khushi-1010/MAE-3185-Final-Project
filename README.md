@@ -1,0 +1,1 @@
+A ball balancing system implemented on a Raspberry Pi using C programming. This is a project for MAE 3185 Introduction to Mechatronics that involves interfacing with a resistive touchscreen to control the position of a ball on the screen through PID control. Aditionally, communication protocols such as I2C and UART are utilized to establish a connection with a Bluetooth module.
