@@ -64,8 +64,7 @@ void controlMotors()
     float e_y = float(des_y) - (y_raw); //e_y is error for y location
     float ed_y = (e_y - eLast_y) / 20e-3;
     ei_y = ei_y + e_y * 20e-3;
-    //printf("e_x: %f\t e_y: %f\n",e_x,e_y);
-    //printf("EI_X: %f\t EI_y: %f\n",ei_x,ei_y);
+    
     if (ei_x < 750)
         ei_x = 750;
     else if (ei_x > 3000)
@@ -170,7 +169,6 @@ void setup()
     pwm_set_chan_level(PWMS_MOT, 1, 1875);
     pwm_set_enabled(PWMS_MOT, true);
     
-    //initializing the bluetooth module
 
     gpio_init(0);
     gpio_init(1);
@@ -180,19 +178,15 @@ void setup()
     sleep_ms(10000);
     //uart_puts(uart0,"AT\r\n");
 /*
-    for(int i=0; i < 10; ++i)
-    {
-        uart_puts(uart0, "AT\r\n");
-        RChars();
-        sleep_ms(1000);
-    }
-    //printf("Setting Default values\r\n");
-    //sleep_ms(1000);
-    //uart_puts(uart0, "AT+ORGL\r\n");
-    //RChars(); 
+    Code for initializing the Bluetooth module
+    
+    printf("Setting Default values\r\n");
+    sleep_ms(1000);
+    uart_puts(uart0, "AT+ORGL\r\n");
+    RChars(); 
 
     printf("Setting name\r\n");
-    uart_puts(uart0, "AT+NAME=VatsalRocks\r\n");
+    uart_puts(uart0, "AT+NAME=BallBalancing\r\n");
     RChars();
 
     printf("Password\r\n");
@@ -206,7 +200,6 @@ void setup()
 }
 void loop()
 {
-    //printf("X_raw: %u\tY_raw: %u\n",x_raw,y_raw);
     char c[4]={0};
     char d[4]={0};
     char var=uart_getc(uart0);
